@@ -1,18 +1,12 @@
 package org.example;
 
-import java.util.Date;
-
 public class Student {
     private String firstName;
     private String lastName;
     private int age;
-    private Date dateOfBirth;
+    private String dateOfBirth;
 
-    public Student()
-    {
-    }
-
-    public Student(String firstName, String lastName, int age, Date dateOfBirth) {
+    public Student(String firstName, String lastName, int age, String dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -43,11 +37,11 @@ public class Student {
         this.age = age;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 }
